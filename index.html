@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Chat Room</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/logo-icon.png" style="filter: invert(1);">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="imgs/logo-icon.png" alt="The Chat Room" style="filter: invert(0);">
+    </nav>
+    <section class="chatroom-container">
+        <div class="chat-box">
+            <div class="history">
+                <!-- <div class="message-left">
+                    This is left message
+                </div>
+                <div class="message-right">
+                    This is right message
+                </div> -->
+            </div>
+            <div class="typing">
+                <form action="#" id="send-container">
+                    <input type="text" name="message" id="send-text" placeholder="Type your message">
+                    <button class="btn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="active-people">
+            <h3>Active people</h3>
+            <div class="list-people">
+                <ul id="user-list">
+                    <!-- <li>Kush</li>
+                    <li>Harry</li>
+                    <li>Rohan</li>
+                    <li>Deepak</li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

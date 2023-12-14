@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(white, gray, black);
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar img {
+    height: 80px;
+    width: 200px;
+}
+
+.chatroom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 90dvh;
+}
+
+.chat-box {
+    /* background-color: brown; */
+    width: 50%;
+}
+
+.history {
+    height: 70svh;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    margin-bottom: 5px;
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.message-left {
+    /* text-align: start; */
+    border: 2px solid black;
+    border-radius: 5px;
+    float: left;
+    clear: both;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 5px purple;
+    background-color: white;
+}
+
+.message-right {
+    /* text-align: end; */
+    border: 2px solid black;
+    border-radius: 5px;
+    float: right;
+    clear: both;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 5px purple;
+    background-color: white;
+}
+
+.typing {
+    text-align: center;
+}
+
+#send-text {
+    width: 80%;
+    height: 40px;
+    margin: 10px 10px 20px 5px;
+    padding: 15px;
+    outline: none;
+    /* background: none; */
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn {
+    width: 15%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: purple;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active-people {
+    /* background: yellow; */
+    width: 25%;
+    text-align: center;
+    margin: 30px 10px;
+}
+
+.list-people {
+    margin: 15px;
+    overflow-y: auto;
+}
+
+.list-people ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.list-people ul li {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: green;
+}
